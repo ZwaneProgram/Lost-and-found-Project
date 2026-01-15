@@ -31,39 +31,6 @@ Before you begin, make sure you have:
 - A Supabase account (free tier available - see setup guide)
 - A Cloudinary account (free tier available - see setup guide)
 
-## Setup Guide
-
-### Database: Supabase Setup
-
-The app uses **Supabase** (PostgreSQL) to store post data in the cloud. This means:
-- ✅ Posts sync across all devices instantly!
-- ✅ Real-time updates when new posts are added
-- ✅ Free tier: 500MB database, 2GB bandwidth/month
-
-Follow the detailed guide in **`SUPABASE_SETUP.md`** for step-by-step instructions!
-
-**Quick steps:**
-1. Sign up at [https://supabase.com/dashboard](https://supabase.com/dashboard) (free, no credit card)
-2. Create a new project
-3. Get your Project URL and anon key from Settings > API
-4. Run the SQL script from `supabase-setup.sql` in SQL Editor
-5. Add credentials to your `.env` file
-
-### Image Hosting: Cloudinary Setup
-
-Follow the detailed guide in **`CLOUDINARY_SETUP.md`** for step-by-step instructions!
-
-**Quick steps:**
-1. Sign up at [https://cloudinary.com/users/register/free](https://cloudinary.com/users/register/free) (free, no credit card)
-2. Get your **Cloud Name** from the dashboard
-3. Create an **Upload Preset** (set to Unsigned mode)
-4. Add both to your `.env` file
-
-### Set Up Environment Variables
-
-1. In your project root, create a file named `.env`
-2. Add your Supabase and Cloudinary configuration:
-
 ```env
 # Supabase Configuration (get from https://supabase.com/dashboard)
 VITE_SUPABASE_URL=https://your-project-id.supabase.co
@@ -74,10 +41,6 @@ VITE_CLOUDINARY_CLOUD_NAME=your-cloud-name-here
 VITE_CLOUDINARY_UPLOAD_PRESET=lost-found-board
 ```
 
-Follow the detailed guides:
-- **`SUPABASE_SETUP.md`** - For database setup
-- **`CLOUDINARY_SETUP.md`** - For image hosting setup
-
 ## Installation
 
 1. **Install dependencies:**
@@ -86,8 +49,8 @@ Follow the detailed guides:
 npm install
 ```
 
-2. **Set up Supabase** (see Supabase Setup above)
-3. **Set up Cloudinary** (see Cloudinary Setup above)
+2. **Set up Supabase** 
+3. **Set up Cloudinary**
 
 3. **Start the development server:**
 
@@ -149,8 +112,6 @@ lost-found-board/
 - **Unlimited uploads**: No upload limits!
 - Perfect for school projects!
 
-This should be more than enough for a school Lost & Found board!
-
 ## Image Optimization
 
 Images are automatically:
@@ -179,20 +140,9 @@ Images are automatically:
 - Check that TypeScript types are correct
 - Verify all environment variables are set
 
-## Future Enhancements (Optional)
-
-- User authentication
-- Email notifications when items are claimed
-- Categories/Tags for items
-- Maps integration for location
-- Admin dashboard
-- Email/SMS notifications
-
 ## License
 
 This project is open source and available for educational use.
-
-## Support
 
 If you encounter any issues:
 1. Check browser console for JavaScript errors
@@ -201,5 +151,3 @@ If you encounter any issues:
 4. Verify Cloudinary configuration is correct
 
 ---
-
-Made with ❤️ for your school's Lost & Found Board
